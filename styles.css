@@ -1,0 +1,51 @@
+.apu {
+  position: relative;
+  z-index: 1;
+}
+
+.celu {
+  position: fixed;
+  left: 500px;
+  z-index: 999;
+}
+
+.apuImg {
+  position: absolute;
+  left: 537px;
+  width: 258px;
+    top: 53px;
+}
+
+.celuImg {
+  width: 335px;
+  z-index: 9;
+  box-shadow: inset 0px 0px 2px 37px white;
+  border-bottom: 69px solid white;
+
+}
+
+#cartel{
+  display: none;
+    z-index: 999;
+    position: fixed;
+    top: 250px;
+    left: 150px;
+}
+
+@media(max-width: 425px) {
+  .celu {
+    display: none;
+  }
+
+  .apuImg {
+    position: absolute;
+    left: 0px;
+        width: 100%;
+        top: 0px;
+  }
+
+  .celuImg {
+    width: 100%;
+
+  }
+}
